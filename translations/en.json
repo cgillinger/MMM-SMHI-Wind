@@ -1,0 +1,13 @@
+{
+    "LOADING": "Loading wind data...",
+    "ERROR": "Could not load wind data.",
+    "WIND_SPEED": "Wind Speed",
+    "WIND_DIRECTION": "Wind Direction",
+    "BEAUFORT": "Beaufort",
+    "MS": "m/s",
+    "CALM": "Calm",
+    "BREEZE": "Breeze",
+    "GALE": "Gale",
+    "STORM": "Storm",
+    "HURRICANE": "Hurricane"
+}

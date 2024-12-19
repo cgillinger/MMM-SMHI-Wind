@@ -1,0 +1,13 @@
+{
+    "LOADING": "Laddar vinddata...",
+    "ERROR": "Kunde inte ladda vinddata.",
+    "WIND_SPEED": "Vindhastighet",
+    "WIND_DIRECTION": "Vindriktning",
+    "BEAUFORT": "Beaufort",
+    "MS": "m/s",
+    "CALM": "Stiltje",
+    "BREEZE": "Bris",
+    "GALE": "Kuling",
+    "STORM": "Storm",
+    "HURRICANE": "Orkan"
+}

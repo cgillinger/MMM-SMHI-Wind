@@ -1,0 +1,58 @@
+/* MMM-SMHI-Wind.css */
+
+/* Direction arrows - Clear cyan for good visibility */
+.MMM-SMHI-Wind .wi[class*='wi-direction-'] {
+    font-size: 190%;
+    color: #00E5FF;  /* Bright cyan */
+}
+
+/* Wind condition icons - Color intensity matches wind intensity */
+/* Calm */
+.MMM-SMHI-Wind .wi-cloud {
+    color: #B0BEC5;  /* Light blue-grey */
+}
+
+/* Light winds */
+.MMM-SMHI-Wind .wi-windy {
+    color: #4FC3F7;  /* Light blue */
+}
+
+/* Strong winds */
+.MMM-SMHI-Wind .wi-strong-wind {
+    color: #2196F3;  /* Medium blue */
+}
+
+/* Gale */
+.MMM-SMHI-Wind .wi-gale-warning {
+    color: #1976D2;  /* Darker blue */
+}
+
+/* Storm */
+.MMM-SMHI-Wind .wi-storm-warning {
+    color: #0D47A1;  /* Very dark blue */
+}
+
+/* Hurricane */
+.MMM-SMHI-Wind .wi-hurricane-warning {
+    color: #1A237E;  /* Deep blue with slight purple tint */
+}
+
+/* Layout styles */
+.wind-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;  /* Space between wind speed and direction */
+}
+
+.wind-horizontal .wind-direction::before {
+    content: "|";
+    margin-right: 15px;
+    opacity: 0.5;
+}
+
+.wind-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
