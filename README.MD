@@ -26,7 +26,7 @@ A MagicMirror² module that displays wind data from the Swedish Meteorological a
 1. Just clone into your MagicMirror's modules directory:
 ```bash
 cd ~/MagicMirror/modules
-git clone https://github.com/yourusername/MMM-SMHI-Wind.git
+git clone https://github.com/cgillinger/MMM-SMHI-Wind.git
 ```
 
 2. Add to your `config.js`:
