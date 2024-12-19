@@ -1,3 +1,5 @@
+Work in progress, not ready for deployment
+
 # MMM-SMHI-Wind
 
 A MagicMirror² module that displays wind data from the Swedish Meteorological and Hydrological Institute (SMHI) API. This module shows current wind conditions with customizable displays including wind speed, direction, and descriptive icons.
@@ -17,7 +19,7 @@ A MagicMirror² module that displays wind data from the Swedish Meteorological a
   - Dynamic weather icons
   - Directional arrows
   - Vertical or horizontal layout
-- **Multilingual**: English and Swedish support
+- **Multilingual**: English and Swedish support (requires matching global MagicMirror language setting)
 
 ## Simple Installation
 
@@ -39,6 +41,16 @@ git clone https://github.com/yourusername/MMM-SMHI-Wind.git
 }
 ```
 
+3. Language Configuration:
+   To use Swedish or English, you must set the language in your global MagicMirror configuration (config.js):
+```javascript
+module.exports = {
+    language: "sv",    // "sv" for Swedish, "en" for English
+    locale: "sv-SE",   // "sv-SE" for Swedish, "en-US" for English
+    // ... rest of your config
+}
+```
+
 That's it! No additional installation steps needed.
 
 ## Configuration Options
@@ -52,7 +64,7 @@ That's it! No additional installation steps needed.
 | `directionType` | Wind direction format (`"compass"` or `"degrees"`) | `"compass"` |
 | `displayType` | Wind speed format (`"ms"`, `"beaufort"`, or `"textsea"`) | `"textsea"` |
 | `iconOnly` | Show only icons without text | `false` |
-| `language` | Display language (`"en"` or `"sv"`) | `"en"` |
+| `language` | Display language (`"en"` or `"sv"`) **Note:** Must match global setting | `"en"` |
 | `layout` | Module layout (`"vertical"` or `"horizontal"`) | `"vertical"` |
 
 ### Example Configurations
@@ -69,7 +81,7 @@ That's it! No additional installation steps needed.
 }
 ```
 
-#### Full Featured
+#### Full Featured (Swedish)
 ```javascript
 {
     module: "MMM-SMHI-Wind",
@@ -81,7 +93,7 @@ That's it! No additional installation steps needed.
         displayType: "textsea",     // Use nautical terms
         directionType: "compass",   // Show N, NE, E, etc.
         iconOnly: false,            // Show both icons and text
-        language: "en",             // English language
+        language: "sv",             // Swedish language (requires matching global setting)
         layout: "horizontal"        // Horizontal layout
     }
 }
@@ -106,6 +118,7 @@ git pull
 1. **No data showing**: Check your latitude/longitude values
 2. **Wrong direction**: Make sure you're using decimal degrees (e.g., 57.7089, not 57°42'32"N)
 3. **Module not loading**: Check MagicMirror's logs for any error messages
+4. **Wrong language**: Verify that both the module's language setting AND the global MagicMirror language/locale settings match
 
 ## Contributing
 

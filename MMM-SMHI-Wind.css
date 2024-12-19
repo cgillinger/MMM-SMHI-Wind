@@ -4,6 +4,8 @@
 .MMM-SMHI-Wind .wi[class*='wi-direction-'] {
     font-size: 190%;
     color: #00E5FF;  /* Bright cyan */
+    display: inline-flex;
+    align-items: center;
 }
 
 /* Wind condition icons - Color intensity matches wind intensity */
@@ -42,17 +44,30 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;  /* Space between wind speed and direction */
+    gap: 8px;  /* Reduced space between elements */
+    line-height: 1;  /* Ensure consistent vertical alignment */
+}
+
+.wind-horizontal .wind-speed,
+.wind-horizontal .wind-direction {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    gap: 4px;  /* Space between icon and text */
 }
 
 .wind-horizontal .wind-direction::before {
     content: "|";
-    margin-right: 15px;
+    margin: 0 8px;  /* Equal spacing on both sides of the separator */
     opacity: 0.5;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
 }
 
 .wind-vertical {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    align-items: flex-start;
 }
