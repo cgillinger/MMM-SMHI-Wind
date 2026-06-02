@@ -4,6 +4,8 @@ Work in progress, not ready for deployment
 
 A MagicMirror² module that displays wind data from the Swedish Meteorological and Hydrological Institute (SMHI) API. This module shows current wind conditions with customizable displays including wind speed, direction, and descriptive icons.
 
+> This is a personal hobby project I build for my own use and publish in case it's useful to someone else. I work on it in my spare time, so issues and PRs are welcome but replies may be slow. Use at your own risk.
+
 ## Key Features
 
 - **Zero Dependencies**: Works right out of the box with your MagicMirror² installation
